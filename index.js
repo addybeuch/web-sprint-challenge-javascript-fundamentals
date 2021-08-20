@@ -179,7 +179,10 @@ function (){
   Formula for cuboid surface area of a cube: 
   2 * (length * width + length * height + width * height)  */
 
-
+CuboidMaker.prototype.surfaceArea = 
+function (){
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
+}
 
 
 
@@ -205,6 +208,16 @@ constructor(attrs){
   this.width = attrs.width;
   this.height = attrs.height;
 }
+}
+
+CuboidMakerTwo.prototype.volume =
+function (){
+  return this.length * this.width * this.height
+}
+
+CuboidMakerTwo.prototype.surfaceArea = 
+function (){
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
 }
 
 
